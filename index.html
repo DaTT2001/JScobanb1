@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //bai 1 
+        const height = 1.6;
+        const weight = 100;
+        let result;
+        result = weight / (height * height);
+        if(result < 18.5) {
+            console.log("Underweight");
+        }
+        else if(result >= 18.5 && result < 25) {
+            console.log("Normal");
+        }
+        else if(result >= 25 && result <30) {
+            console.log("Overweight");
+        }
+        else if(result >= 30 && result <35) {
+            console.log("Obese");
+        }
+        else {
+            console.log("Extremly obese")
+        }
+    // bai2
+        const personOne = "Mai" ;
+        const personTwo = "Tuấn" ;
+        const ageOne = 20;
+        const ageTwo = 15;
+        if(ageTwo - ageOne == 0) {
+            console.log(personOne + " bằng tuổi " + personTwo )
+        }
+        else if(ageTwo - ageOne > 0) {
+            console.log(personOne + " nhỏ hơn " + personTwo + " "+(ageTwo - ageOne) + " tuổi")
+        }
+        else {
+            console.log(personOne + " lớn hơn " + personTwo + " " + (ageOne - ageTwo)+ " tuổi")
+        }
+    //bai3
+        const money = 1200;
+        if(money < 400 && money > 100) {
+            sum = money * 1.1;
+            console.log("Tiền dịch vụ: " + money + " $");
+            console.log("Tiền tips: " + (money * 0.1) + " $");
+            console.log("Tổng thanh toán: " + sum + " $");
+        }
+        else {
+            sum = money * 1.15;
+            console.log("Tiền dịch vụ: " + money + " $");
+            console.log("Tiền tips: " + (money * 0.15) + " $");
+            console.log("Tổng thanh toán: " + sum + " $");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
